@@ -23,8 +23,8 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    codeCoverageToolOption: 'JaCoCo'
-    codeCoverageClassFilesDirectories: 'build/classes/main/'
+    codeCoverageToolOption: 'Cobertura'
+    codeCoverageClassFilesDirectories: 'gradle/wrapper/gradle-wrapper.jar'
     tasks: 'build'
     
 - task: CmdLine@2
@@ -32,4 +32,3 @@ steps:
     script: |
      ls
   displayName: 'Check'
-  
