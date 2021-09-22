@@ -31,6 +31,14 @@ steps:
     script: |
      ls
      cd build && ls
+     echo "Reports"
+     cd reports && ls
+     cd ..
+     echo "Test results"
+     cd test-results && ls
+     cd ..
+     echo "Classes"
+     cd classes && ls
   displayName: 'Check'
 
 # - task: Gradle@2
