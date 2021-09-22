@@ -30,6 +30,7 @@ steps:
   inputs:
     script: |
      ls
+     cd build && ls
   displayName: 'Check'
 
 # - task: Gradle@2
@@ -46,8 +47,3 @@ steps:
 #     codeCoverageClassFilesDirectories: 'gradle/wrapper/gradle-wrapper.jar'
 #     tasks: 'build'
     
-- task: CmdLine@2
-  inputs:
-    script: |
-     ls
-  displayName: 'Check'
