@@ -24,7 +24,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     codeCoverageToolOption: 'Cobertura'
-    codeCoverageClassFilesDirectories: 'build/classes/main/'
+    codeCoverageClassFilesDirectories: 'src/main/webapp'
     tasks: 'build'
     
 - task: CmdLine@2
