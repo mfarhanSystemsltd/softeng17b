@@ -13,6 +13,17 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'ls'
+   
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
+    tasks: 'fatJar'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    sonarQubeRunAnalysis: false
+    spotBugsAnalysis: false
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''
