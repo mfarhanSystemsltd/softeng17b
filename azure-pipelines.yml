@@ -29,4 +29,7 @@ steps:
     
 - task: CmdLine@2
   inputs:
-    script: 'ls'
+    script: |
+     ls
+     cd CCReport43F6D5EF && ls
+  displayName: 'Check'
