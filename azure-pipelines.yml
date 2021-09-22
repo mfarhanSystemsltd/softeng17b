@@ -25,7 +25,6 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     codeCoverageToolOption: 'Cobertura'
-    codeCoverageClassFilesDirectories: 'src/main/webapp/'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 - task: CmdLine@2
