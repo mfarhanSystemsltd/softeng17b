@@ -20,7 +20,10 @@ steps:
     tasks: 'build'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+    gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 
