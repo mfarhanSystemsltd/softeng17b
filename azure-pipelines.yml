@@ -44,15 +44,18 @@ steps:
      cd ..
      cd ..
      echo "Classes !"
-     cd classes && ls
+     cd classes
      echo "Groovy !"
      cd groovy
-     cd test && ls
+     cd test
+     cd gr && ls
+     cd ..
      cd ..
      cd ..
      echo "Java !"
      cd java
-     cd main && ls
+     cd main
+     cd gr && ls
   displayName: 'Check'
 
 # - task: Gradle@2
