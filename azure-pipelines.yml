@@ -64,7 +64,15 @@ steps:
      cd gr
      cd ntua
      cd ece 
-     cd softeng17b && ls
+     cd softeng17b
+     echo "Conf !"
+     cd conf && ls
+     cd ..
+     echo "Data !"
+     cd data && ls
+     cd ..
+     echo "API !"
+     cd api && ls
   displayName: 'Check'
 
 # - task: Gradle@2
