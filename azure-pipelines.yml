@@ -48,7 +48,9 @@ steps:
      echo "Groovy !"
      cd groovy
      cd test
-     cd gr && ls
+     cd gr
+     cd ntua && ls
+     cd ..
      cd ..
      cd ..
      cd ..
@@ -56,6 +58,7 @@ steps:
      cd java
      cd main
      cd gr && ls
+     cd ntua && ls
   displayName: 'Check'
 
 # - task: Gradle@2
