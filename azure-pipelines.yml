@@ -57,6 +57,7 @@ steps:
      cd ..
      cd ..
      cd ..
+     cd ..
      echo "Java !"
      cd java
      cd main
