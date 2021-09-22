@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: CmdLine@2
+  inputs:
+    script: 'ls'
 - task: Gradle@2
   inputs:
     workingDirectory: ''
@@ -23,3 +26,7 @@ steps:
     codeCoverageToolOption: 'Cobertura'
     codeCoverageClassFilesDirectories: 'build/classes/main/'
     tasks: 'build'
+    
+- task: CmdLine@2
+  inputs:
+    script: 'ls'
