@@ -23,17 +23,13 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    codeCoverageToolOption: 'Cobertura'
+    codeCoverageToolOption: 'JaCoCo'
+    codeCoverageClassFilesDirectories: 'build/classes/main/'
     tasks: 'build'
     
 - task: CmdLine@2
   inputs:
     script: |
      ls
-     cd CCReport43F6D5EF && ls
   displayName: 'Check'
   
-- task: PublishCodeCoverageResults@1
-  inputs:
-      codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/CCReport43F6D5EF/coverage.xml'
