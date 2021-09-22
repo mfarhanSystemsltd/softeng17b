@@ -32,22 +32,27 @@ steps:
      ls
      cd build && ls
      echo "Reports !"
-     cd reports && ls
-     cd tests && ls
+     cd reports
+     cd tests
+     cd test && ls
+     cd ..
      cd ..
      cd ..
      echo "Test results !"
-     cd test-results && ls
+     cd test-results
      cd test && ls
      cd ..
      cd ..
      echo "Classes !"
      cd classes && ls
      echo "Groovy !"
-     cd groovy && ls
+     cd groovy
+     cd test && ls
+     cd ..
      cd ..
      echo "Java !"
-     cd java && ls
+     cd java
+     cd main && ls
   displayName: 'Check'
 
 # - task: Gradle@2
