@@ -26,20 +26,25 @@ steps:
     jdkArchitectureOption: 'x64'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
-
-- task: Gradle@2
+- task: CmdLine@2
   inputs:
-    workingDirectory: ''
-    gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    codeCoverageToolOption: 'Cobertura'
-    codeCoverageClassFilesDirectories: 'gradle/wrapper/gradle-wrapper.jar'
-    tasks: 'build'
+    script: |
+     ls
+  displayName: 'Check'
+
+# - task: Gradle@2
+#   inputs:
+#     workingDirectory: ''
+#     gradleWrapperFile: 'gradlew'
+#     gradleOptions: '-Xmx3072m'
+#     javaHomeOption: 'JDKVersion'
+#     jdkVersionOption: '1.8'
+#     jdkArchitectureOption: 'x64'
+#     publishJUnitResults: true
+#     testResultsFiles: '**/TEST-*.xml'
+#     codeCoverageToolOption: 'Cobertura'
+#     codeCoverageClassFilesDirectories: 'gradle/wrapper/gradle-wrapper.jar'
+#     tasks: 'build'
     
 - task: CmdLine@2
   inputs:
