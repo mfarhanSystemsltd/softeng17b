@@ -24,6 +24,8 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
+    codeCoverageToolOption: 'Cobertura'
+    codeCoverageClassFilesDirectories: 'build/java/main/gr/ntua/ece/softeng17b'
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 - task: CmdLine@2
@@ -88,4 +90,4 @@ steps:
 #     codeCoverageToolOption: 'Cobertura'
 #     codeCoverageClassFilesDirectories: 'gradle/wrapper/gradle-wrapper.jar'
 #     tasks: 'build'
-    
+
